@@ -44,10 +44,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W       &kp E         &kp R         &kp T                                                    &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A               &kp S       &kp D         &lt 4 F       &kp G        &kp LC(Y)              &kp PRINTSCREEN      &kp H        &kp J  &lt 5 K    &kp L    &kp SEMICOLON
-&mt LEFT_CONTROL Z  &kp X       &kp C         &kp V         &kp B        &kp LC(Z)              &kp ESC              &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp TAB             &kp C_MUTE  &kp LEFT_GUI  &kp LEFT_ALT  &lt 2 SPACE  &mt LSHIFT DELETE      &mt RSHFT BACKSPACE  &lt 1 ENTER                             &kp F4
+&kp Q    &kp W       &kp E    &kp R        &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A    &kp S       &kp D    &lt 4 F      &kp G      &none           &kp PRINTSCREEN      &kp H        &kp J  &lt 5 K    &kp L    &kp SEMICOLON
+&kp Z    &kp X       &kp C    &kp V        &kp B      &none           &kp ESC              &kp N        &kp M  &kp COMMA  &kp DOT  &kp RET
+&kp TAB  &kp C_MUTE  &kp TAB  &lt 1 SPACE  &kp SPACE  &kp LSHIFT      &mt RSHFT BACKSPACE  &lt 1 SPACE                             &kp RET
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -84,10 +84,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                     &none  &none     &none     &none     &none
+&trans  &trans  &trans  &trans  &trans  &trans      &none  &none  &mkp MB1  &mkp MB3  &mkp MB2  &none
+&trans  &trans  &trans  &trans  &trans  &trans      &none  &none  &mkp MB4  &none     &mkp MB5  &none
+&trans  &trans  &trans  &trans  &trans  &trans      &none  &none                                &none
             >;
         };
 
