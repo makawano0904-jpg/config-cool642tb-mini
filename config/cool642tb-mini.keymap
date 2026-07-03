@@ -44,10 +44,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W       &kp E    &kp R        &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A    &kp S       &kp D    &kp F        &kp G      &kp PAGE_UP        &kp PRINTSCREEN  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z    &kp X       &kp C    &kp V        &kp B      &kp PAGE_DOWN      &kp ESC          &kp N        &kp M  &kp COMMA  &kp DOT  &kp RET
-&kp TAB  &kp C_MUTE  &kp TAB  &lt 2 SPACE  &kp SPACE  &kp LSHIFT         &kp BACKSPACE    &lt 1 SPACE                             &to 3
+&kp Q  &kp W       &kp E    &kp R        &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A  &kp S       &kp D    &kp F        &kp G      &kp PAGE_UP        &kp PRINTSCREEN  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z  &kp X       &kp C    &kp V        &kp B      &kp PAGE_DOWN      &kp ESC          &kp N        &kp M  &kp COMMA  &kp DOT  &kp RET
+&to 5  &kp C_MUTE  &kp TAB  &lt 2 SPACE  &kp SPACE  &kp LSHIFT         &kp BACKSPACE    &lt 1 SPACE                             &to 3
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -55,10 +55,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp N6    &kp N7   &kp N8  &kp N9  &kp N0
-&none            &none        &none     &none       &none        &none      &none  &kp HOME  &kp END  &none   &none   &none
-&none            &none        &none     &none       &none        &none      &none  &none     &none    &none   &none   &none
-&none            &none        &none     &none       &none        &none      &none  &trans                             &none
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                    &none     &kp AMPERSAND  &kp N8  &kp N9  &kp N0
+&none            &kp SQT            &none     &none       &none        &none      &none  &kp HOME  &kp END        &none   &none   &none
+&none            &none              &none     &none       &none        &none      &none  &none     &none          &none   &none   &none
+&none            &none              &none     &none       &none        &none      &none  &trans                                   &none
             >;
         };
 
