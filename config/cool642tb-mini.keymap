@@ -25,6 +25,11 @@
             bindings = <&kp LANG1>;
             key-positions = <18 19>;
         };
+
+        hoge {
+            bindings = <&none>;
+            key-positions = <18 19 20 30 32>;
+        };
     };
 
     behaviors {
