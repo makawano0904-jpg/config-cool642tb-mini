@@ -1,4 +1,5 @@
 #include "cool642tb-mini.dtsi"
+#include <input/processors.dtsi> // add
 
 &default_transform {
     col-offset = <6>;
@@ -18,6 +19,7 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        input-processors = <&zip_temp_layer 4 10000>; // add
 
     };
 };
@@ -60,4 +62,13 @@
         automouse-layer = <4>;
         scroll-layers = <5>;
     };
+};
+
+// add
+&zip_temp_layer {
+    excluded-positions = <
+        16 // J
+        17 // K
+        18 // l
+    >;
 };
