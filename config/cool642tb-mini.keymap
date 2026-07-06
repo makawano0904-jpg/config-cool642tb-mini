@@ -25,11 +25,6 @@
             bindings = <&kp LANG1>;
             key-positions = <18 19>;
         };
-
-        hoge {
-            bindings = <&none>;
-            key-positions = <18 19 20 30 32>;
-        };
     };
 
     behaviors {
@@ -59,10 +54,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                     &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp AT_SIGN
-&none            &kp SQT            &none     &none       &none        &none      &none   &kp HOME  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
-&none            &none              &none     &none       &none        &none      &none   &kp END   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &trans
-&none            &none              &none     &trans      &none        &none      &trans  &trans                                                            &none
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp AT_SIGN
+&none            &kp SQT            &none     &none       &kp DELETE   &none       &none   &kp HOME  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
+&none            &none              &none     &none       &none        &none       &none   &kp END   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &trans
+&none            &none              &none     &trans      &none        &trans      &trans  &trans                                                            &none
             >;
         };
 
