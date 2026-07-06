@@ -46,7 +46,7 @@
 &kp Q  &kp W       &kp E    &kp R        &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A  &kp S       &kp D    &kp F        &kp G      &kp PAGE_UP        &kp PRINTSCREEN  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &kp Z  &kp X       &kp C    &kp V        &kp B      &kp PAGE_DOWN      &kp ESC          &kp N        &kp M  &kp COMMA  &kp DOT  &kp RET
-&to 5  &kp C_MUTE  &kp TAB  &lt 2 SPACE  &kp SPACE  &kp LSHIFT         &kp BACKSPACE    &lt 1 SPACE                             &to 3
+&to 5  &kp C_MUTE  &kp TAB  &lt 3 SPACE  &kp SPACE  &kp LSHIFT         &kp BACKSPACE    &lt 1 SPACE                             &to 2
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -54,19 +54,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                    &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
-&none            &kp SQT            &none     &none       &none        &none      &none  &kp HOME  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
-&none            &none              &none     &none       &none        &none      &none  &kp END   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
-&none            &none              &none     &none       &none        &none      &none  &trans                                                        &none
-            >;
-        };
-
-        NUM {
-            bindings = <
-&none  &none  &none  &none  &none                    &kp KP_NUMBER_7  &kp KP_NUMBER_8 &kp KP_NUMBER_9 &none  &none
-&none  &none  &none  &none  &none  &none      &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5 &kp KP_NUMBER_6 &none  &none
-&none  &none  &none  &none  &none  &none      &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2 &kp KP_NUMBER_3 &none  &none  &none
-&none  &none  &none  &none  &none  &none      &none  &none                                 &none
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                     &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp AT_SIGN
+&none            &kp SQT            &none     &none       &none        &none      &none   &kp HOME  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
+&none            &none              &none     &none       &none        &none      &none   &kp END   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &trans
+&none            &none              &none     &none       &none        &none      &trans  &trans                                                            &none
             >;
         };
 
@@ -74,11 +65,20 @@
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E  &kp R                    &kp HOME        &kp UP_ARROW    &kp END    &none  &none
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F  &none      &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none  &none
-&none           &none  &none  &none  &none  &none      &none  &none           &none           &none      &none  &none
+&none           &none  &none  &none  &none  &none      &none  &none           &none           &none      &none  &trans
 &none           &none  &none  &none  &none  &none      &none  &none                                             &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        NUM {
+            bindings = <
+&none  &none  &none  &none  &none                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &kp EQUAL
+&none  &none  &none  &none  &none  &none      &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&none  &none  &none  &none  &none  &none      &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+&none  &none  &none  &none  &none  &none      &trans  &kp SPACE                                                  &none
+            >;
         };
 
         MOUSE {
