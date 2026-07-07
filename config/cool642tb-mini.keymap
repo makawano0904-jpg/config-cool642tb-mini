@@ -64,10 +64,10 @@
 
         GAME_and_ARROW {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E   &kp R                     &kp HOME        &kp UP_ARROW    &kp END    &none  &none
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D   &kp F  &none       &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none  &none
-&none           &none  &none  &none   &none  &none       &none  &none           &none           &none      &none  &trans
-&none           &none  &none  &trans  &none  &trans      &none  &none                                             &to 0
+&kp TAB         &kp Q  &kp W  &kp E      &kp R                     &kp HOME        &kp UP_ARROW    &kp END    &none  &none
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F  &none       &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none  &none
+&none           &none  &none  &none      &none  &none       &none  &none           &none           &none      &none  &trans
+&kp LEFT_WIN    &none  &none  &kp SPACE  &none  &trans      &none  &none                                             &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
