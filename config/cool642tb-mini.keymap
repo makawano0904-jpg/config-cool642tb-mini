@@ -75,7 +75,7 @@
 
         NUM {
             bindings = <
-&none      &none           &kp UP_ARROW    &none            &none                          &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE
+&none      &kp HOME        &kp UP_ARROW    &kp END          &none                          &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE
 &kp RC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RC(Y)  &none       &none   &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON
 &kp RC(Z)  &kp RC(X)       &kp RC(C)       &kp RC(V)        &none      &none       &none   &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER
 &none      &none           &none           &trans           &trans     &trans      &trans  &kp KP_NUMBER_0                                                     &none
