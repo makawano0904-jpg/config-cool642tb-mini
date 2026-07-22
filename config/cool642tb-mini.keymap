@@ -19,12 +19,12 @@
 
         shift_tab {
             bindings = <&kp LANG2>;
-            key-positions = <2 3>;
+            key-positions = <13 12>;
         };
 
         lang {
             bindings = <&kp LANG1>;
-            key-positions = <6 7>;
+            key-positions = <18 19>;
         };
     };
 
@@ -45,8 +45,8 @@
         default_layer {
             bindings = <
 &kp Q      &kp W       &kp E           &kp R        &kp T                                    &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S       &kp D           &kp F        &kp G      &none          &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z      &kp X       &kp C           &kp V        &kp B      &lt 5 TAB      &none          &kp N        &kp M  &kp COMMA  &kp DOT  &kp RET
+&kp A      &kp S       &kp D           &kp F        &kp G      &none          &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp ENTER
+&kp Z      &kp X       &kp C           &kp V        &kp B      &lt 5 TAB      &kp LANG1      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
 &kp LCTRL  &kp C_MUTE  &kp LEFT_SHIFT  &lt 3 SPACE  &kp SPACE  &kp TAB        &kp BACKSPACE  &lt 1 SPACE                             &kp RIGHT_SHIFT
             >;
 
